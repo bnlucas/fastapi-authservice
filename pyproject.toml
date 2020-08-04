@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fastapi-authservice"
+version = "0.1.0"
+description = "Simple interaction with external auth services with FastAPI"
+authors = ["nlucas <nathan@bnlucas.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.60.1"
+pydantic = "^1.6.1"
+pyjwt = "^1.7.1"
+httpx = "^0.13.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-cov = "^2.10.0"
+pytest-xdist = "^1.34.0"
+black = {version = "^19.10b0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
